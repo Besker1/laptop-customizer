@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "./Header";
 
-import Options from "./Options";
+import MainOptions from "./MainOptions";
 
 import "./App.css";
 
@@ -13,7 +13,7 @@ const Features = (props) => {
     const featureHash = featureName + "-" + idx;
 
     return (
-      <Options
+      <MainOptions
         key={featureHash}
         featureName={featureName}
         options={props.features[featureName]}

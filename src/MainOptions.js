@@ -5,7 +5,7 @@ import Option from './Option'
 export default function MainOptions(props) {
   
  
-  const options = props.options.map((option) => {
+  const MainOptions = props.options.map((option) => {
   const itemHash = slugify(JSON.stringify(option));
   
     return (

@@ -4,7 +4,7 @@ import Items from "./Item";
 import Total from "./Total";
 
 import "./App.css";
-const Cart = (props) => {
+const Summary = (props) => {
   const summary = Object.keys(props.state.selected).map((feature, idx) => {
     const featureHash = feature + "-" + idx;
 
@@ -35,4 +35,4 @@ const Cart = (props) => {
   );
 };
 
-export default Cart;
+export default Summary;

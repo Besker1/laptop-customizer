@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Summary from "./Summary";
 import Features from "./Features";
+import Store from './StoreFeatures'
 
 import "./App.css";
 
@@ -47,7 +48,7 @@ function App(props) {
       <main>
         
         <Features
-          features={props.features}
+          features={Store}
           header="Customize your Laptop"
           updateFeature={(feature, newValue) =>
             updateFeature(feature, newValue)
